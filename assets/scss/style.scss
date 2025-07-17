@@ -1,0 +1,26 @@
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2222;
+}
+
+#slide-logo{
+    width: 200px;
+}
+
+#logo{
+    width: 40px;
+}
+
+.carousel-item{
+    &-img{
+        height: 400px;
+        object-fit: cover;
+
+        @media (min-width: 980px){
+            height: 100vh;
+        }
+    }
+}
