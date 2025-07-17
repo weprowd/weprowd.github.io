@@ -1,0 +1,18 @@
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#logo{
+    width: 40px;
+}
+
+.carousel-item{
+    img{
+        height: 100vh;
+        object-fit: cover;
+    }
+}
