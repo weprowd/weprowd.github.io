@@ -106,7 +106,7 @@ body {
 }
 
 section {
-  padding: 15px 20px;
+  padding: 30px 20px;
 }
 @media (min-width: 1240px) {
   section {
@@ -321,7 +321,7 @@ h2 {
 .list-group-circles .list-circles {
   width: 455px;
   height: 500px;
-  margin: 40px 0;
+  margin: 40px 0 0;
   position: relative;
   left: 47%;
   transform: translateX(-50%);
