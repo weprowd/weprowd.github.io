@@ -620,6 +620,7 @@ h2 {
   }
   .accordion-slider__accordion .accordion .accordion-item .accordion-content {
     display: block;
+    font-size: 18px;
   }
   .accordion-slider__slider {
     order: 3;
@@ -655,6 +656,7 @@ h2 {
   padding: 40px 20px 30px;
   background-color: #fff;
   border-radius: 20px;
+  padding-right: 60px;
 }
 @media (min-width: 960px) {
   .icon-boxes__wrap {
