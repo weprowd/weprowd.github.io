@@ -1,0 +1,68 @@
+.icon-boxes{
+
+    &__wrap{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    &__intro{
+        margin-bottom: 24px;
+    }
+
+    &__heading{
+       margin-bottom: 17px; 
+    }
+
+    .box-icon{
+        box-shadow: 2.33px 11.64px 13.97px 0px #0000000D;
+        padding: 40px 20px 30px;
+        background-color: $white;
+        border-radius: 20px;
+    }
+
+    @media (min-width: $tablet){
+        &__wrap{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__intro{
+            p{
+                line-height: 36px;
+                font-size: 24px;
+                text-wrap: pretty;
+            }
+        }
+
+        &__heading{
+            line-height: 54px;
+        }
+
+        .box-icon{
+            width: calc(50% - 10px);
+        }
+    }
+
+    @media (min-width: $laptop){
+        .box-icon{
+            padding: 40px;
+            box-shadow: 2.33px 11.64px 13.97px 0px rgba(0, 0, 0, 0.05);
+            width: 324px;
+
+            p{
+                text-wrap: balance;
+            }
+
+            &:first-child{
+                width: calc(50% - 10px);
+            }
+            &:nth-child(2){
+                width: calc(50% - 10px);
+            }
+                &:nth-child(4){
+                width: 550px;
+            }
+        }
+    }
+}
