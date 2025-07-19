@@ -138,7 +138,7 @@ section {
   background-color: #000;
   display: inline-block;
   color: #fff;
-  margin-bottom: 7px;
+  margin-bottom: 17px;
 }
 .badge--green {
   background-color: #2CB57D;
@@ -689,6 +689,7 @@ h2 {
     line-height: 36px;
     font-size: 24px;
     text-wrap: pretty;
+    letter-spacing: -0.2px;
   }
   .icon-boxes__heading {
     line-height: 54px;
