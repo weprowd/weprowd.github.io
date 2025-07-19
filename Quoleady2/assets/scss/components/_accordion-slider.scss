@@ -51,7 +51,7 @@
     
                 &.active {
                     .accordion-content {
-                        display: block;
+                        max-height: 300px;
                     }
     
                     .accordion-toggle {
@@ -70,10 +70,14 @@
     
                 .accordion-content {
                     color: $dark_text;
-                    font-size: 14px;
-                    padding-top: 10px;
                     line-height: 1.5;
-                    display: none;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all .3s;
+
+                    p{
+                        padding-top: 15px;
+                    }
                 }
     
                 .accordion-toggle {
@@ -199,6 +203,12 @@
                     .accordion-content{
                         display: block;
                         font-size: 18px; 
+                        overflow: visible;
+                        max-height: none !important;
+
+                        p{
+                            padding-bottom: 15px;
+                        }
                     }
                 }
 

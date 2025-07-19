@@ -4,6 +4,10 @@
     &__content{
         p{
             margin-top: 20px;
+
+            br{
+                display: none;   
+            }
         }
     }
 
@@ -77,6 +81,10 @@
             p{
                 text-wrap: balance;
                 padding-right: 50px;
+
+                br{
+                    display: block;
+                }
             }
         }
 
@@ -113,5 +121,7 @@
             }
         
         }
+
+        
     }
 }

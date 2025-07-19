@@ -19,7 +19,17 @@
         padding: 40px 20px 30px;
         background-color: $white;
         border-radius: 20px;
-        padding-right: 60px;
+        padding-right: 40px;
+        line-height: 100%;
+
+        p{
+            margin-top: 13px;
+            line-height: 24px;
+
+            br{
+                display: none;
+            }
+        }
     }
 
     @media (min-width: $tablet){
@@ -42,6 +52,10 @@
 
         .box-icon{
             width: calc(50% - 10px);
+
+            p br{
+                display: block;
+            }
         }
     }
 

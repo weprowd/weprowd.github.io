@@ -193,6 +193,9 @@ h2 {
 .image-section__content p {
   margin-top: 20px;
 }
+.image-section__content p br {
+  display: none;
+}
 .image-section__form {
   margin-top: 35px;
   display: flex;
@@ -254,6 +257,9 @@ h2 {
   .image-section__content p {
     text-wrap: balance;
     padding-right: 50px;
+  }
+  .image-section__content p br {
+    display: block;
   }
   .image-section__image {
     width: 50%;
@@ -504,7 +510,7 @@ h2 {
   border-top: 1px solid rgb(217, 217, 217);
 }
 .accordion-slider__accordion .accordion .accordion-item.active .accordion-content {
-  display: block;
+  max-height: 300px;
 }
 .accordion-slider__accordion .accordion .accordion-item.active .accordion-toggle img {
   transform: rotate(45deg);
@@ -516,10 +522,13 @@ h2 {
 }
 .accordion-slider__accordion .accordion .accordion-item .accordion-content {
   color: #1F1F1F;
-  font-size: 14px;
-  padding-top: 10px;
   line-height: 1.5;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.accordion-slider__accordion .accordion .accordion-item .accordion-content p {
+  padding-top: 15px;
 }
 .accordion-slider__accordion .accordion .accordion-item .accordion-toggle {
   position: absolute;
@@ -621,6 +630,11 @@ h2 {
   .accordion-slider__accordion .accordion .accordion-item .accordion-content {
     display: block;
     font-size: 18px;
+    overflow: visible;
+    max-height: none !important;
+  }
+  .accordion-slider__accordion .accordion .accordion-item .accordion-content p {
+    padding-bottom: 15px;
   }
   .accordion-slider__slider {
     order: 3;
@@ -656,7 +670,15 @@ h2 {
   padding: 40px 20px 30px;
   background-color: #fff;
   border-radius: 20px;
-  padding-right: 60px;
+  padding-right: 40px;
+  line-height: 100%;
+}
+.icon-boxes .box-icon p {
+  margin-top: 13px;
+  line-height: 24px;
+}
+.icon-boxes .box-icon p br {
+  display: none;
 }
 @media (min-width: 960px) {
   .icon-boxes__wrap {
@@ -673,6 +695,9 @@ h2 {
   }
   .icon-boxes .box-icon {
     width: calc(50% - 10px);
+  }
+  .icon-boxes .box-icon p br {
+    display: block;
   }
 }
 @media (min-width: 1240px) {
