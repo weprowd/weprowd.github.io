@@ -44,4 +44,19 @@ main p a {
   height: 50px;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+}
+
+#carouselTwoItems .carousel-indicators {
+  position: static;
+  top: 0;
+  margin: 20px 0 0;
+}
+
+#carouselTwoItems .carousel-indicators button {
+  background-color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */
