@@ -65,4 +65,11 @@ main{
 
 #carouselTwoItems .carousel-indicators button{
     background-color: #000
+}  
+
+.contact-row{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }

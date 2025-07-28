@@ -59,4 +59,11 @@ main p a {
   background-color: #000;
 }
 
+.contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 /*# sourceMappingURL=style.css.map */
